@@ -1,0 +1,51 @@
+.contact{
+    padding: 60px 0;
+
+    @extend %back;
+
+    &__wrapper{
+        max-width: 100%;
+        width: 100%;
+        background-color: #FF7A50;
+        border-radius: 40px;
+        text-align: center;
+        padding: 60px;
+        color: white;
+
+        .content__title{
+            color: white;
+            font-size: 40px;
+        }
+
+        .content__text{
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 16px;
+            padding-top: 10px;
+        }
+
+        .email{
+            max-width: 838px;
+            
+            margin: 0 auto;
+            margin-top: 31px;
+            width: 100%;
+            background-color: white;
+            border-radius: 50px;
+            padding: 10px 10px 10px 43px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            input{
+                border: none;
+                outline: none;
+            }
+
+            .regular_btn{
+                border-radius: 50px;
+            }
+        }
+    }
+
+
+}

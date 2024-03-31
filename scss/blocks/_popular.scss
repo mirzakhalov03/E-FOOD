@@ -1,0 +1,153 @@
+.popular{
+    padding: 90px 0;
+
+    @extend %back;
+
+
+    h2{
+        text-align: center;
+    }
+
+    &__wrapper{
+        max-width: 100%;
+        width: 100%;
+        padding-top: 55px;
+
+        @extend %display;
+
+
+    }
+
+@mixin category($top, $side){
+    max-width: 210px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #ff79501d;
+    color: var(--navy);
+    font-size: 20px;
+    padding: $top $side;
+    transition: .1s;
+
+    .category-p{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+
+    &:hover{
+        background-color: var(--orange);
+        color: white;
+        
+    }
+
+    &:hover .svg-path{
+        fill: white;
+    }
+
+    &:focus{
+        background-color: var(--orange);
+        color: white;
+        
+    }
+
+    &:focus .svg-path{
+        fill: white;
+    }
+}
+
+    &__category:first-child{
+        @include category(13px, 40px);
+
+        
+    }
+
+    &__category:nth-child(2){
+        @include category(3px, 40px);
+
+        
+    }
+    &__category:nth-child(3){
+        @include category(13px, 32px);
+
+        
+    }
+    &__category:nth-child(4){
+        @include category(13px, 30px);
+
+        
+    }
+    &__category:nth-child(5){
+        @include category(13px, 33px);
+
+        
+    }
+
+    &__wrapper-last{
+        max-width: 100%;
+        width: 100%;
+        
+        @extend %display;
+
+        margin-top: 40px;
+
+
+
+    }
+
+    &__card{
+        max-width: 208px;
+        width: 100%;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: .3s;
+
+        &:hover{
+            transform: scale(107%);
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+
+        p{
+            padding: 20px 0 8px 0;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #363853;
+        }
+
+        span{
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        .regular_btn-mod{
+            font-size: 15px;
+            line-height: 18px;
+            padding: 7px 13px;
+            margin: 0 51px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__footer{
+        max-width: 100%;
+        width: 100%;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+
+}

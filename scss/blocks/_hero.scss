@@ -1,0 +1,98 @@
+.hero{
+    @extend %back;
+
+    &__wrapper{
+        max-width: 100%;
+        width: 100%;
+
+        @extend %display;
+
+
+    }
+
+    &__content{
+        max-width: 50%;
+        width: 100%;
+        transition: .25s;
+
+        &:hover{
+            transform: scale(103%);
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+
+        h1{
+            font-weight: 500;
+            font-size: 66px;
+            line-height: 78px;
+            color: var(--navy);
+
+            span{
+                color: var(--orange);
+            }
+        }
+
+        p{
+            max-width: 520px;
+        }
+
+    }
+
+    .btn-grouper{
+        max-width: 350px;
+        margin-top: 30px;
+        @extend %display;
+
+        gap: 30px;
+
+        a{
+            text-decoration: underline;
+            font-size: 20px;
+            line-height: 23px;
+            color: #363853;
+        }
+    }
+
+    &__img{
+        max-width: 50%;
+        width: 100%;
+        position: relative;
+
+        .main-img{
+            width: 100%;
+
+            transition: .25s;
+
+        &:hover{
+            transform: scale(103%);
+        }
+        }
+
+        .alex_card{
+            position: absolute;
+            left: 10%;
+            top: 30%;
+            transition: .25s;
+            &:hover{
+                transform: scale(102%);
+            }
+
+        }
+
+        .double_card{
+            position: absolute;
+            right: -10%;
+            bottom: 35%;
+            transition: .25s;
+            &:hover{
+                transform: scale(103%);
+            }
+            
+        }
+    }
+
+
+}

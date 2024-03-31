@@ -1,0 +1,67 @@
+.nav{
+    max-width: 100%;
+    padding: 30px 0 20px 0;
+    position: relative;
+
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: .3s;
+
+    background-color: rgba(240, 248, 255, 0.447);
+
+    backdrop-filter: blur(5px);
+
+    &:hover{
+        transform: scaleX(103%);
+        background-color: rgba(240, 248, 255, 0.5);
+        backdrop-filter: blur(7px);
+    }
+
+    &__wrapper{
+        max-width: 100%;
+        width: 100%;
+
+        @extend %display;
+        
+       
+
+        .nav__ul-btn{
+            @extend %display;
+            gap: 60px
+        }
+
+        ul{
+            @extend %display;
+
+            gap: 60px;
+        }
+
+        a{
+            
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--navy);
+
+            &:hover{
+                color: var(--orange);
+            }
+        }
+
+        
+        
+
+        .nav__icons-btns{
+            width: 100%;
+            @extend %display;
+            gap: 60px;
+            
+        }
+
+        
+
+        
+    }
+    
+}

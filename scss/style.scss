@@ -1,0 +1,90 @@
+
+@import "./reset.scss";
+@import "./blocks/nav";
+@import "./blocks/hero";
+@import "./blocks/popular";
+@import "./blocks/stay";
+@import "./blocks/menu";
+@import "./blocks/download";
+@import "./blocks/review";
+@import "./blocks/contact";
+@import "./blocks/footer";
+
+
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+%display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%back{
+    background-image:  linear-gradient(right, #EFEFEF00, #EFEFEF33);
+}
+
+ 
+
+:root{
+    --orange: #FF7A50;
+    --navy: #363853;
+    
+}
+
+.regular_btn{
+    padding: 14px 28px;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    border: none;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    transition: .3s;
+
+    &:hover{
+        transform: scale(102%);
+        background-color: #ff7950e6;
+        box-shadow: #64646fa2 0px 7px 29px 0px;
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: scale(100%);
+        background-color: #ff7950;
+        box-shadow: #64646f33 0px 7px 29px 0px;
+    }
+}
+
+.regular_btn-radius{
+    border-radius: 30px 30px 1px 30px;
+}
+
+.content__text{
+    font-size: 20px;
+    color: #363853;
+    line-height: 30px;
+}
+
+.content__title{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #363853;
+
+    span{
+        color: #ff7950;
+    }
+}

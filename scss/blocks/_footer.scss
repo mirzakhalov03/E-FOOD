@@ -1,0 +1,55 @@
+.footer{
+    padding-top: 100px;
+
+    @extend %back;
+
+    &__wrapper{
+        @extend %display;
+
+        max-width: 100%;
+        width: 100%;
+        padding: 10px 0 50px 0;
+
+        .tab{
+            strong{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            p{
+                font-size: 18px;
+                color: #37383D;
+            }
+        }
+    }
+
+
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .icon-pad:hover{
+            fill: #363853;
+        }
+
+        .icon-pad:hover .social-icon{
+            fill: #EEEEEF;
+        }
+
+        .social-icon:hover{
+            fill: #363853;
+        }
+
+    }
+
+
+
+    .footer-last{
+        p, span{
+            color: #646464
+        }
+        @extend %display;
+
+        padding: 20px 0;
+    }
+}
